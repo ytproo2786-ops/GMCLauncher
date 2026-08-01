@@ -1,144 +1,232 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gmclauncher.org/</id>
-    <title>GMC Launcher</title>
+<feed xmlns="http://www.w3.org/2005/07/Atom">
+
+    <id>https://gmclauncher.org/feed/feed.xml</id>
+
+    <title>GMC Launcher News</title>
+
     <updated>2026-08-01T18:50:27.873Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
+
+    <generator>GMC Launcher</generator>
+
     <link rel="self" href="https://gmclauncher.org/feed/feed.xml"/>
+
     <subtitle>
-        An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.
+        GMC Launcher is a modern open-source Minecraft launcher focused on performance, customization and freedom.
     </subtitle>
-    <logo>https://gmclauncher.org//img/favicon.png</logo>
-    <rights>AGPL-3.0</rights>
-    
+
+    <logo>
+        https://gmclauncher.org/img/favicon.png
+    </logo>
+
+    <rights>
+        AGPL-3.0
+    </rights>
+
+
     <entry>
-        <title type="html">GMC Launcher Release 1.2.5</title>
-        <id>https://gmclauncher.org/news/release-1.2.5</id>
+
+        <title type="html">
+            GMC Launcher 1.2.5 - Stability &amp; Performance Update
+        </title>
+
+        <id>
+            https://gmclauncher.org/news/release-1.2.5
+        </id>
+
         <link href="https://gmclauncher.org/news/release-1.2.5"/>
-        <updated>2026-08-01T00:00:00.000Z</updated>
-        <summary type="html">The Update of Stability and Speed!</summary>
+
+        <updated>
+            2026-08-01T00:00:00.000Z
+        </updated>
+
+
+        <summary type="html">
+            A major update focused on better performance, stability and new launcher features.
+        </summary>
+
+
         <content type="html">
-            <p>Hello everyone!</p>
-            <p>We are thrilled to announce the release of GMC Launcher 1.2.5! This update is all about stability, speed, and fixing the issues that you've reported. We've been working hard to make your experience even better, and we think you'll love the improvements.</p>
-            <p>Grab the latest download <a href="https://gmclauncher.org/download">here</a>, and read on to see the full list of changes.</p>
-            
-            <h1>Added</h1>
+
+            <p>
+                Hello GMC community!
+            </p>
+
+            <p>
+                We are happy to announce the release of GMC Launcher 1.2.5!
+                This update improves stability, speed and brings new features requested by our users.
+            </p>
+
+
+            <h2>
+                ✨ Added
+            </h2>
+
             <ul>
-                <li>Add Modrinth headers for download source (standalone, modpack, dependency) by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/1">#1</a></li>
-                <li>Log components in instance logs by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/2">#2</a></li>
-                <li>Add a new "Community" tab to the launcher for easier access to servers and news by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/3">#3</a></li>
-                <li>Add support for IBM Semeru Runtime Open Edition (openj9 jvm) by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/4">#4</a></li>
-                <li>Add option to change the background cat scaling by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/5">#5</a></li>
+
+                <li>
+                    New Community tab for servers, news and useful links.
+                </li>
+
+                <li>
+                    Improved Modrinth integration.
+                </li>
+
+                <li>
+                    Better launcher logs and debugging information.
+                </li>
+
+                <li>
+                    Improved Java runtime detection.
+                </li>
+
             </ul>
 
-            <h2>Changed</h2>
+
+            <h2>
+                ⚙ Changed
+            </h2>
+
             <ul>
-                <li>Include Flame API key in CDN downloads by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/6">#6</a></li>
-                <li>When auth is down, launch into offline mode by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/7">#7</a></li>
-                <li>Enable automatic update checking by default by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/8">#8</a></li>
-                <li>Improve NetJob failure dialog by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/9">#9</a></li>
-                <li>Update to Qt 6.10.2 on Windows and Linux builds by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/10">#10</a></li>
+
+                <li>
+                    Improved download system performance.
+                </li>
+
+                <li>
+                    Updated internal components.
+                </li>
+
+                <li>
+                    Improved user interface responsiveness.
+                </li>
+
             </ul>
 
-            <h2>Fixed</h2>
+
+            <h2>
+                🐛 Fixed
+            </h2>
+
             <ul>
-                <li>AccountList: Skip refresh when !shouldRefresh by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/11">#11</a></li>
-                <li>Do not open account select dialog if there are no accounts by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/12">#12</a></li>
-                <li>Don't delete base directories when evicting metacache by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/13">#13</a></li>
-                <li>Don't remove old Microsoft accounts until they're successfully reauthenticated by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/14">#14</a></li>
-                <li>Fix Cmd+Q on macOS closing active window instead of quitting by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/15">#15</a></li>
-                <li>Fix Copy/Upload buttons not working in ScreenshotsPage by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/16">#16</a></li>
-                <li>Fix infinite loop in SkinManageDialog by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/17">#17</a></li>
-                <li>Fix memory leak and crash with data packs modal by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/18">#18</a></li>
-                <li>Fix offline accounts not being refreshed during launch by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/19">#19</a></li>
-                <li>Fix wrong Xbox failure string by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/20">#20</a></li>
-                <li>Fix: Remove trademark and special characters from instance folder names by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/21">#21</a></li>
-                <li>Fixed dependencies not enabling/disabling other dependencies by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/22">#22</a></li>
-                <li>Fixes for task abort logic by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/23">#23</a></li>
-                <li>Fixes to 'Use system locale' by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/24">#24</a></li>
-                <li>Fixes to PrismExternalUpdater by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/25">#25</a></li>
-                <li>Fixes to translations by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/26">#26</a></li>
-                <li>Low RAM warning fixes by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/27">#27</a></li>
-                <li>NetJob: do not automatically retry on <code>404 Not Found</code> response by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/28">#28</a></li>
-                <li>ProgressDialog: allow finished tasks to be re-displayed once restarted by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/29">#29</a></li>
-                <li>Search by project id (#) improvement by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/30">#30</a></li>
-                <li>Show error message when device code authorization fails by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/31">#31</a></li>
-                <li>Show process start error string in logs by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/32">#32</a></li>
-                <li>Use "Discrete" key from switcheroo if present by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/33">#33</a></li>
-                <li>Use native APIs for GPU discovery by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/34">#34</a></li>
-                <li>changed "Ok" to "OK" by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/35">#35</a></li>
-                <li>fix Atl path traversal by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/36">#36</a></li>
-                <li>fix change version by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/37">#37</a></li>
-                <li>fix other logs page crash by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/38">#38</a></li>
-                <li>fix text overlap in project item views by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/39">#39</a></li>
-                <li>fix world size uninitialized memory and UI refresh signal by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/40">#40</a></li>
-                <li>fix: force metadata version list refreshes to reload by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/41">#41</a></li>
-                <li>fix: ignore non-existent or empty paths in processURLs by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/42">#42</a></li>
-                <li>fix: trim whitespaces from ManagedPackURL by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/43">#43</a></li>
+
+                <li>
+                    Fixed several crashes and stability issues.
+                </li>
+
+                <li>
+                    Fixed launcher cache problems.
+                </li>
+
+                <li>
+                    Fixed various UI bugs.
+                </li>
+
             </ul>
-            
-            <p>Thank you to all our contributors and users for your support. We hope you enjoy this new version of GMC Launcher!</p>
-            
-            <p>Until next time! 🌈</p>
+
+
+            <p>
+                Thank you for using GMC Launcher!
+                We appreciate every user and contributor who helps improve the project.
+            </p>
+
+
+            <p>
+                See you in the next update! 🚀
+            </p>
+
+
         </content>
+
+
         <author>
-            <name>Dev_Morgan</name>
+            <name>
+                Dev_Morgan
+            </name>
         </author>
+
+
     </entry>
-    
+
+
+
     <entry>
-        <title type="html">GMC Launcher Release 1.1.1</title>
-        <id>https://gmclauncher.org/news/release-1.1.1</id>
+
+        <title type="html">
+            GMC Launcher 1.1.1 - Bug Fix Update
+        </title>
+
+
+        <id>
+            https://gmclauncher.org/news/release-1.1.1
+        </id>
+
+
         <link href="https://gmclauncher.org/news/release-1.1.1"/>
-        <updated>2026-07-11T00:00:00.000Z</updated>
-        <summary type="html">Bugfix release</summary>
+
+
+        <updated>
+            2026-07-11T00:00:00.000Z
+        </updated>
+
+
+        <summary type="html">
+            Small update focused on fixes and improvements.
+        </summary>
+
+
         <content type="html">
-            <p>We are pleased to announce, that GMC Launcher version 1.1.1 is now available. This release mainly contains bug fixes and improvements to the overall stability of the launcher.</p>
-            <p>Grab the latest download <a href="https://gmclauncher.org/download">here</a>, and read on to see the full list of changes.</p>
-            
-            <h2>Changelog</h2>
-            
-            <h3>Added</h3>
+
+            <p>
+                GMC Launcher 1.1.1 is now available.
+            </p>
+
+
+            <p>
+                This release improves stability and fixes several issues reported by the community.
+            </p>
+
+
+            <h2>
+                Fixed
+            </h2>
+
+
             <ul>
-                <li>Support builds without Git by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/44">#44</a></li>
-                <li>Limit offline username to 16 characters by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/45">#45</a></li>
-                <li>Allow fractional DPI scaling by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/46">#46</a></li>
-                <li>Provide portable and system builds by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/47">#47</a></li>
-                <li>Improve release workflow by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/48">#48</a></li>
-            </ul>
-            
-            <h3>Changed</h3>
-            <ul>
-                <li>Add license headers by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/49">#49</a></li>
-                <li>Improve mod downloads by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/50">#50</a></li>
-                <li>Bundle JRE 8u312 for AppImage by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/51">#51</a></li>
-            </ul>
-            
-            <h3>Fixed</h3>
-            <ul>
-                <li>Update metainfo URLs by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/52">#52</a></li>
-                <li>Fix JavaCheck for AppImage by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/53">#53</a></li>
-                <li>Fix branding on macOS by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/54">#54</a></li>
-                <li>Clarify license by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/55">#55</a></li>
-                <li>Fix portable builds on Windows by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/56">#56</a></li>
-                <li>Improve translations by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/57">#57</a></li>
-                <li>Limit instance names' length by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/58">#58</a></li>
-                <li>Fix loading of WebP images on macOS by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/59">#59</a></li>
-                <li>Fix buttons on mods page when instance is running by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/60">#60</a></li>
-                <li>Statically link remaining internal libraries by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/61">#61</a></li>
-            </ul>
-            
-            <h3>Removed</h3>
-            <ul>
-                <li>Remove paste.polymc.org by <a href="https://github.com/Dev_Morgan">@Dev_Morgan</a> in <a href="https://github.com/GMCLauncher/GMCLauncher/pull/62">#62</a></li>
+
+                <li>
+                    Improved launcher reliability.
+                </li>
+
+                <li>
+                    Fixed several UI issues.
+                </li>
+
+                <li>
+                    Improved account handling.
+                </li>
+
             </ul>
 
-            <p>You can <a href="https://gmclauncher.org/download">grab the latest download here</a> for your respective platform.</p>
-            
-            <p>Thanks to all contributors, who have worked on this release!</p>
+
+            <p>
+                Thanks to everyone supporting GMC Launcher!
+            </p>
+
+
         </content>
+
+
         <author>
-            <name>Dev_Morgan</name>
+            <name>
+                Dev_Morgan
+            </name>
         </author>
+
+
     </entry>
+
+
 </feed>
+```
