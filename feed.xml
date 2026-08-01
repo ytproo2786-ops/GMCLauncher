@@ -1,151 +1,90 @@
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/07/Atom">
+
+<feed xmlns="http://www.w3.org/2005/Atom">
 
     <id>https://gmclauncher.org/feed/feed.xml</id>
 
     <title>GMC Launcher News</title>
 
-    <updated>2026-08-01T18:50:27.873Z</updated>
+    <updated>2026-08-01T18:50:27Z</updated>
 
     <generator>GMC Launcher</generator>
 
     <link rel="self" href="https://gmclauncher.org/feed/feed.xml"/>
 
-    <subtitle>
-        GMC Launcher is a modern open-source Minecraft launcher focused on performance, customization and freedom.
-    </subtitle>
+    <subtitle>GMC Launcher is a modern open-source Minecraft launcher focused on performance, customization and freedom.</subtitle>
 
-    <logo>
-        https://gmclauncher.org/img/favicon.png
-    </logo>
+    <logo>https://gmclauncher.org/img/favicon.png</logo>
 
-    <rights>
-        AGPL-3.0
-    </rights>
+    <rights>AGPL-3.0</rights>
 
 
     <entry>
 
-        <title type="html">
-            GMC Launcher 1.2.5 - Stability &amp; Performance Update
-        </title>
+        <title type="html">GMC Launcher 1.2.5 - Stability &amp; Performance Update</title>
 
-        <id>
-            https://gmclauncher.org/news/release-1.2.5
-        </id>
+        <id>https://gmclauncher.org/news/release-1.2.5</id>
 
         <link href="https://gmclauncher.org/news/release-1.2.5"/>
 
-        <updated>
-            2026-08-01T00:00:00.000Z
-        </updated>
+        <updated>2026-08-01T00:00:00Z</updated>
 
-
-        <summary type="html">
-            A major update focused on better performance, stability and new launcher features.
-        </summary>
+        <summary type="html">A major update focused on better performance, stability and new launcher features.</summary>
 
 
         <content type="html">
+            <![CDATA[
+                <p>Hello GMC community!</p>
 
-            <p>
-                Hello GMC community!
-            </p>
-
-            <p>
+                <p>
                 We are happy to announce the release of GMC Launcher 1.2.5!
-                This update improves stability, speed and brings new features requested by our users.
-            </p>
+                This update improves stability, speed and introduces new features.
+                </p>
+
+                <h2>✨ Added</h2>
+
+                <ul>
+                    <li>New Community tab for servers, news and useful links.</li>
+                    <li>Improved Modrinth integration.</li>
+                    <li>Better launcher logs and debugging information.</li>
+                    <li>Improved Java runtime detection.</li>
+                    <li>Improved instance management.</li>
+                </ul>
 
 
-            <h2>
-                ✨ Added
-            </h2>
+                <h2>⚙ Changed</h2>
 
-            <ul>
-
-                <li>
-                    New Community tab for servers, news and useful links.
-                </li>
-
-                <li>
-                    Improved Modrinth integration.
-                </li>
-
-                <li>
-                    Better launcher logs and debugging information.
-                </li>
-
-                <li>
-                    Improved Java runtime detection.
-                </li>
-
-            </ul>
+                <ul>
+                    <li>Improved download system performance.</li>
+                    <li>Updated internal components.</li>
+                    <li>Improved user interface responsiveness.</li>
+                </ul>
 
 
-            <h2>
-                ⚙ Changed
-            </h2>
+                <h2>🐛 Fixed</h2>
 
-            <ul>
-
-                <li>
-                    Improved download system performance.
-                </li>
-
-                <li>
-                    Updated internal components.
-                </li>
-
-                <li>
-                    Improved user interface responsiveness.
-                </li>
-
-            </ul>
+                <ul>
+                    <li>Fixed several crashes and stability issues.</li>
+                    <li>Fixed launcher cache problems.</li>
+                    <li>Fixed various UI bugs.</li>
+                </ul>
 
 
-            <h2>
-                🐛 Fixed
-            </h2>
-
-            <ul>
-
-                <li>
-                    Fixed several crashes and stability issues.
-                </li>
-
-                <li>
-                    Fixed launcher cache problems.
-                </li>
-
-                <li>
-                    Fixed various UI bugs.
-                </li>
-
-            </ul>
-
-
-            <p>
+                <p>
                 Thank you for using GMC Launcher!
                 We appreciate every user and contributor who helps improve the project.
-            </p>
+                </p>
 
-
-            <p>
+                <p>
                 See you in the next update! 🚀
-            </p>
-
-
+                </p>
+            ]]>
         </content>
 
 
         <author>
-            <name>
-                Dev_Morgan
-            </name>
+            <name>Dev_Morgan</name>
         </author>
-
 
     </entry>
 
@@ -153,80 +92,52 @@
 
     <entry>
 
-        <title type="html">
-            GMC Launcher 1.1.1 - Bug Fix Update
-        </title>
+        <title type="html">GMC Launcher 1.1.1 - Bug Fix Update</title>
 
-
-        <id>
-            https://gmclauncher.org/news/release-1.1.1
-        </id>
-
+        <id>https://gmclauncher.org/news/release-1.1.1</id>
 
         <link href="https://gmclauncher.org/news/release-1.1.1"/>
 
-
-        <updated>
-            2026-07-11T00:00:00.000Z
-        </updated>
+        <updated>2026-07-11T00:00:00Z</updated>
 
 
-        <summary type="html">
-            Small update focused on fixes and improvements.
-        </summary>
+        <summary type="html">Small update focused on fixes and improvements.</summary>
 
 
         <content type="html">
+            <![CDATA[
 
-            <p>
+                <p>
                 GMC Launcher 1.1.1 is now available.
-            </p>
+                </p>
 
-
-            <p>
+                <p>
                 This release improves stability and fixes several issues reported by the community.
-            </p>
+                </p>
 
 
-            <h2>
-                Fixed
-            </h2>
+                <h2>🐛 Fixed</h2>
+
+                <ul>
+                    <li>Improved launcher reliability.</li>
+                    <li>Fixed several UI issues.</li>
+                    <li>Improved account handling.</li>
+                </ul>
 
 
-            <ul>
-
-                <li>
-                    Improved launcher reliability.
-                </li>
-
-                <li>
-                    Fixed several UI issues.
-                </li>
-
-                <li>
-                    Improved account handling.
-                </li>
-
-            </ul>
-
-
-            <p>
+                <p>
                 Thanks to everyone supporting GMC Launcher!
-            </p>
+                </p>
 
-
+            ]]>
         </content>
 
 
         <author>
-            <name>
-                Dev_Morgan
-            </name>
+            <name>Dev_Morgan</name>
         </author>
-
 
     </entry>
 
 
 </feed>
-```
